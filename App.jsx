@@ -1,0 +1,2 @@
+import React, { useState } from "react";
+export default function App(){ const [page,setPage]=useState('home'); const render=()=>{switch(page){case 'about': return <div>About</div>;case 'careers': return <div>Careers</div>;case 'contact': return <div>Contact</div>;default: return <div>Home</div>;}}; return <div><button onClick={()=>setPage('home')}>Home</button><button onClick={()=>setPage('about')}>About</button>{render()}</div>}
